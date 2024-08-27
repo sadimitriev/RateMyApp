@@ -56,7 +56,6 @@ class RateMyAppDialog extends StatelessWidget {
   /// Creates a new Rate my app dialog.
   const RateMyAppDialog(
     this.rateMyApp, {
-    super.key,
     required this.title,
     required this.message,
     required this.contentBuilder,
@@ -145,7 +144,6 @@ class RateMyAppStarDialog extends StatefulWidget {
   /// Creates a new Rate my app star dialog.
   const RateMyAppStarDialog(
     this.rateMyApp, {
-    super.key,
     required this.title,
     required this.message,
     required this.contentBuilder,
@@ -329,7 +327,6 @@ abstract class _RateMyAppDialogButton extends StatelessWidget {
   /// Creates a new Rate my app button widget instance.
   const _RateMyAppDialogButton(
     this.rateMyApp, {
-    super.key,
     required this.text,
     this.validator = _validatorTrue,
     this.callback,
@@ -362,7 +359,6 @@ class RateMyAppRateButton extends _RateMyAppDialogButton {
   /// Creates a new Rate my app "rate" button widget instance.
   const RateMyAppRateButton(
     super.rateMyApp, {
-    super.key,
     required super.text,
     super.validator = null,
     super.callback,
@@ -383,7 +379,6 @@ class RateMyAppLaterButton extends _RateMyAppDialogButton {
   /// Creates a new Rate my app "later" button widget instance.
   const RateMyAppLaterButton(
     super.rateMyApp, {
-    super.key,
     required super.text,
     super.validator = null,
     super.callback,
@@ -404,7 +399,6 @@ class RateMyAppNoButton extends _RateMyAppDialogButton {
   /// Creates a new Rate my app "no" button widget instance.
   const RateMyAppNoButton(
     super.rateMyApp, {
-    super.key,
     required super.text,
     super.validator = null,
     super.callback,
